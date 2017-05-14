@@ -1,10 +1,10 @@
 {
     "version": "1.0.0",
     "summary": "Juliana Marcelino's personal website",
-    "repository": "https://Ulisses@bitbucket.org/Ulisses/jumarcelinos.git",
+    "repository": "http://github.com/elm-make-is-way-too-strict/forced-me-to-put-this.git",
     "license": "MIT",
     "source-directories": [
-        "./src/Jumarcelinos"
+        "./src/elm"
     ],
     "exposed-modules": [],
     "dependencies": {

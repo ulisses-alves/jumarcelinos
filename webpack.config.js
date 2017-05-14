@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    app: [
+    index: [
       './src/index.js'
     ]
   },
@@ -20,13 +20,24 @@ module.exports = {
         loader:  'file-loader?name=[name].[ext]',
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
+      },
+      {
         test:    /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
         loader:  'elm-webpack-loader?verbose=true&warn=true',
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+        test: /\.styl$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'stylus-loader',
+        ]
       },
     ],
 
