@@ -1,0 +1,19 @@
+{
+  "name": "jumarcelinos",
+  "version": "1.0.0",
+  "description": "Juliana Marcelino's personal website.",
+  "main": "src/index.js",
+  "repository": "https://Ulisses@bitbucket.org/Ulisses/jumarcelinos.git",
+  "author": "Ulisses Bini de Paiva Alves <ulissesbpalves@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --port 3000",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "elm-webpack-loader": "^4.3.1",
+    "file-loader": "^0.11.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
