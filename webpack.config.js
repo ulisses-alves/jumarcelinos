@@ -1,4 +1,5 @@
-const path = require("path");
+const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -15,24 +16,30 @@ module.exports = {
   module: {
     rules: [
       {
-        test:    /\.html$/,
+        test: /\.html$/i,
         exclude: /node_modules/,
         loader:  'file-loader?name=[name].[ext]',
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           'style-loader',
           'css-loader',
         ]
       },
       {
-        test:    /\.elm$/,
-        exclude: [/elm-stuff/, /node_modules/],
-        loader:  'elm-webpack-loader?verbose=true&warn=true',
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader?name=[name]-[hash].[ext]'
       },
       {
-        test: /\.styl$/,
+        test: /\.elm$/i,
+        exclude: [/elm-stuff/, /node_modules/],
+        use: [
+          'elm-webpack-loader?verbose=true&warn=true'
+        ],
+      },
+      {
+        test: /\.styl$/i,
         use: [
           'style-loader',
           'css-loader',
@@ -43,6 +50,15 @@ module.exports = {
 
     noParse: /\.elm$/,
   },
+
+  plugins: [
+    new CopyWebpackPlugin ([
+      {
+        from: './src/assets',
+        to: path.resolve(__dirname + '/dist/assets')
+      }
+    ])
+  ],
 
   devServer: {
     inline: true,

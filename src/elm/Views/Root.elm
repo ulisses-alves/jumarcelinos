@@ -30,9 +30,11 @@ headerView =
         [ text "Juliana Marcelino"
         ]
     , div
-        [ class "" ]
+        [ ]
         [ img
-            [ class "block ratio-21x9 bg-silver"
+            [ class "block"
+            , src "assets/header.png"
+            , alt "Have you told your story today?"
             ]
             []
         ]
@@ -92,7 +94,7 @@ footerView =
       "jumarcelinos@gmail.com"
   in
     footer
-      [ class "flex items-center justify-around py2 sm-py4 my2 sm-my4 border-top" ]
+      [ class "flex items-center justify-around py2 sm-py4 my2 sm-my4 border-top border-silver" ]
       [ div
           [ class "sm-col sm-col-8" ]
           [ text ""
