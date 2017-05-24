@@ -1,6 +1,6 @@
 {
   "name": "jumarcelinos",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Juliana Marcelino's personal website.",
   "main": "src/index.js",
   "repository": "https://Ulisses@bitbucket.org/Ulisses/jumarcelinos.git",
@@ -19,6 +19,7 @@
     "style-loader": "^0.17.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   }

@@ -11,9 +11,9 @@ import Html.Attributes exposing (..)
 view : Html msg
 view =
   div
-    [ class "max-width-4 mx-auto" ]
+    [ class "bg-silver" ]
     [ div
-        [ class "clearfix" ]
+        [ class "clearfix max-width-4 mx-auto" ]
         [ headerView
         , mainView
         , footerView
@@ -32,8 +32,8 @@ headerView =
     , div
         [ ]
         [ img
-            [ class "block"
-            , src "assets/header.png"
+            [ class "fit"
+            , src "images/header.png"
             , alt "Have you told your story today?"
             ]
             []
@@ -45,15 +45,15 @@ mainView : Html msg
 mainView =
   main_ []
     [ articleView
-        ""
+        "images/topic_1.png"
         "\"Create engaging content and tell your unic story.\""
         False
     , articleView
-        ""
+        "images/topic_2.png"
         "\"Best articulate your brand with the right strategy.\""
         True
     , articleView
-        ""
+        "images/topic_3.png"
         "\"Bring brand values to your intranet.\""
         False
     ]
@@ -64,9 +64,11 @@ articleView imgUrl txt reversed =
   let
     image =
       div
-        [ class "sm-col sm-col-6 bg-silver" ]
+        [ class "sm-col sm-col-6" ]
         [ img
-            [ class "block ratio-3x2" ]
+            [ class "block fit"
+            , src imgUrl
+            ]
             []
         ]
 
