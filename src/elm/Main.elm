@@ -3,8 +3,8 @@ module Main exposing (..)
 
 import Html exposing (Html)
 
-import Views.Root exposing (view)
+import Pages.Home
 
 
 main : Html msg
-main = view
+main = Pages.Home.view
