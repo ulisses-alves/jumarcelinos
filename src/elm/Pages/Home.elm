@@ -20,18 +20,18 @@ contentView =
   div []
     [ articleView
         "images/topic_1.png"
-        "\"Create engaging content and tell your unic story.\""
-        "Prove business results and unlock the value of your content. I can help you with beautiful custom content, that will build lasting and meaningful relationships with customers."
+        "\"Create engaging content and tell your unique story.\""
+        "Unlock the value of your brand with beautiful custom content, that will build lasting and meaningful relationships with your customers."
         False
     , articleView
         "images/topic_2.png"
         "\"Best articulate your brand with the right strategy.\""
-        "Best articulate who you are, what you do and most importantly why you do it. With the right strategy you can express your brand genuine personality."
+        "Don’t know how to share who you are, what you do and most importantly why you do it? With the right strategy you can express your brand genuine personality."
         True
     , articleView
         "images/topic_3.png"
         "\"Bring brand values to your intranet.\""
-        "You need an internal communication that engages employees and changes behavior. Help your employees live the brand."
+        "Getting your employees on board is priceless. You need an internal communication that engages employees and changes behavior."
         False
     ]
 
