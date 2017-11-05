@@ -1,9 +1,7 @@
-'use strict'
+import { render } from 'inferno'
+import { App } from './app'
 
-require('./index.html')
-require('ace-css/css/ace.css')
-require('./style/index.styl')
-
-const Elm = require('./elm/Main.elm')
-const mountNode = document.getElementById('main')
-const app = Elm.Main.embed(mountNode)
+render(
+  <App />,
+  document.getElementById('main')
+)
