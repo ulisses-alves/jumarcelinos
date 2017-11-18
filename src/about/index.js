@@ -10,7 +10,7 @@ export function About() {
       }
       leftContent={
         <img
-          src="/static/img/avatar.png"
+          src="static/img/avatar.png"
           alt="Juliana Marcelino"
           className={style.avatar} />
       }
